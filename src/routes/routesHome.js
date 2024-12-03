@@ -1,7 +1,10 @@
+import express from 'express';
 import { controllerHome, controllerHomeName, controllerHomeQuery } from '../controllers/controllerHome.js';
 
-export default function routes (app) {
-    app.get('/', controllerHome);
-    app.get('/home/:name', controllerHomeName);
-    app.get('/query', controllerHomeQuery);
-};
+const routesHome = express.Router();
+
+routesHome.get('/', controllerHome);
+routesHome.get('/home/:name', controllerHomeName);
+routesHome.get('/query', controllerHomeQuery);
+
+export default routesHome;
