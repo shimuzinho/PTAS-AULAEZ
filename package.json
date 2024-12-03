@@ -25,7 +25,7 @@
   "contributors": [],
   "scripts": {
     "dev": "node --watch server.js",
-    "test": ""
+    "test": "node server.js"
   },
   "dependencies": {
     "express": "^4.21.1"
