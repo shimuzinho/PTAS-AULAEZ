@@ -4,7 +4,7 @@ import { controllerHome, controllerHomeName, controllerHomeQuery } from '../cont
 const routesHome = express.Router();
 
 routesHome.get('/', controllerHome);
-routesHome.get('/home/:name', controllerHomeName);
+routesHome.get('/:name', controllerHomeName);
 routesHome.get('/query', controllerHomeQuery);
 
 export default routesHome;
